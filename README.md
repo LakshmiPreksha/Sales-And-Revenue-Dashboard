@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Sales & Revenue Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **Sales & Revenue Dashboard** built with React. The idea behind the dashboard is simple: make it easy for a manager to quickly understand how the business is doing by looking at sales performance, monthly targets, and the top products/customers.
 
-## Available Scripts
+🔗 **Live Demo:** [Sales & Revenue Dashboard](https://sales-and-revenue-dashboard.vercel.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I built this as part of the **Krowd Software Engineer Internship pre-interview assignment**.
+The main goal was to design a dashboard that:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Tracks **total revenue and growth**
+* Compares **monthly sales with targets**
+* Highlights the **top products and customers**
+* Presents everything in a clean, visual format
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+* **React (JavaScript)** for the frontend
+* **Tailwind CSS** for styling
+* **Recharts** for charts and data visualization
+* **Framer Motion** for subtle animations
+* Hosted on **Vercel**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Dashboard Sections
 
-### `npm run eject`
+* **Top Section:** KPIs like total revenue, target achievement %, and revenue growth %
+* **Charts:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  * Line chart showing monthly sales vs target
+  * Pie chart for product share
+  * Bar chart (optional) for top 5 customers
+* **Tables:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * Complete sales data (date, sales rep, client, product, units, revenue, target)
+  * Top 5 products by sales
+  * Top 5 customers by revenue
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Revenue Growth
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The dashboard calculates month-over-month revenue growth using:
 
-## Learn More
+$$
+\frac{(This\ Month - Last\ Month)}{Last\ Month} \times 100
+$$
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Data
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For this project, I used **mock data** from a local JSON file (no backend).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to Run
 
-### Analyzing the Bundle Size
+1. Clone the repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   git clone https://github.com/yourusername/sales-revenue-dashboard.git
+   cd sales-revenue-dashboard
+   ```
 
-### Making a Progressive Web App
+2. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm install
+   ```
 
-### Advanced Configuration
+3. Start the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   npm start
+   ```
 
-### Deployment
+   The app runs on [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Build for production
 
-### `npm run build` fails to minify
+   ```bash
+   npm run build
+   ```
+## Delivery
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Live Link:** [Sales & Revenue Dashboard](https://sales-and-revenue-dashboard.vercel.app/)
+* **GitHub Repo:** [Repository Link](https://github.com/yourusername/sales-revenue-dashboard)
